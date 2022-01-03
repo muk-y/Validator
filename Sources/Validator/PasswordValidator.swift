@@ -17,13 +17,7 @@ struct PasswordValidator: ValidatorConvertible {
     
     func validated(_ value: String) throws -> String {
         guard !value.isEmpty else {
-            var error = ""
-            if type == .normal {
-                error = GlobalConstants.text_password_empty
-            } else if type == .confirmPassword {
-                error = GlobalConstants.text_confirm_password_empty
-            }
-            throw ValidationError(error, type: self.type.rawValue)
+            return type.emptyErrorMessage
         }
 //        guard !value.isEmpty else {throw ValidationError("\(type.title) \(GlobalConstants.Localization.is_required)", type: self.type.rawValue)}
 //        guard value.count >= 6 else { throw ValidationError(GlobalConstants.Localization.text_password_validation, type: self.type.rawValue) }
@@ -49,6 +43,19 @@ public enum PasswordType: String {
             return "\(GlobalConstants.new) \(GlobalConstants.text_password)"
         case .confirmPassword:
             return "\(GlobalConstants.confirm) \(GlobalConstants.text_password)"
+        }
+    }
+    
+    var emptyErrorMessage: String {
+        switch self {
+        case .normal:
+            return GlobalConstants.text_password_empty
+        case .oldPassword:
+            return "\(GlobalConstants.current) \(GlobalConstants.text_password_empty)"
+        case .newPassword:
+            return "\(GlobalConstants.new) \(GlobalConstants.text_password_empty)"
+        case .confirmPassword:
+            return "\(GlobalConstants.confirm) \(GlobalConstants.text_password_empty)"
         }
     }
     
