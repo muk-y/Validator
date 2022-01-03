@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ValidatorType {
+public enum ValidatorType {
     
     case email
     case password(type: PasswordType)

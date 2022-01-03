@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Validator",
+        "repositoryURL": "https://github.com/muk-y/Validator.git",
+        "state": {
+          "branch": "main",
+          "revision": "c4612a70fdc5db477b41468e94408668c107c559",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

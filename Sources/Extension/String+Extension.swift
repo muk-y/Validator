@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     func validatedText(validationType: ValidatorType) throws -> String {
         let validator = VaildatorFactory.validatorFor(type: validationType)
