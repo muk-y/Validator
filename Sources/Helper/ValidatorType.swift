@@ -10,8 +10,8 @@ import Foundation
 public enum ValidatorType {
     
     case email
-    case password(type: PasswordType)
+    case password(type: PasswordType = .normal)
     case requiredField(field: String)
-    case number(_ key: String?)
+    case number(_ key: String? = nil)
 
 }
