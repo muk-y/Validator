@@ -9,8 +9,8 @@ import Foundation
 
 public class ValidationError: Error {
     
-    var message: String
-    var type: String
+    public var message: String
+    public var type: String
     
     init(_ message: String, type: String) {
         self.message = message
