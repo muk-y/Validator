@@ -14,6 +14,7 @@ enum VaildatorFactory {
         case .email: return EmailValidator()
         case .password(let type): return PasswordValidator(type)
         case .requiredField(let fieldName): return RequiredFieldValidator(fieldName)
+        case .number(let key): return NumberValidator(key)
         }
     }
     

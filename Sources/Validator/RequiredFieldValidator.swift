@@ -8,7 +8,6 @@
 import Foundation
 
 struct RequiredFieldValidator: ValidatorConvertible {
-
     
     private let type: String
     

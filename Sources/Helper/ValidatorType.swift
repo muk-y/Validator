@@ -12,5 +12,6 @@ public enum ValidatorType {
     case email
     case password(type: PasswordType)
     case requiredField(field: String)
+    case number(_ key: String?)
 
 }
