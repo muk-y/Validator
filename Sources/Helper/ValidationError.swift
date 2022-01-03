@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ValidationError: Error {
+public class ValidationError: Error {
     
     var message: String
     var type: String

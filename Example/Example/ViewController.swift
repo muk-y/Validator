@@ -6,17 +6,18 @@
 //
 
 import UIKit
+import Validator
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let email = "abc"
+        let emailAddress = "abc"
         do {
-            let _ = try email.validatedText(validationType: .email)
-        } catch(let error) {
-            let
-            self.output?.obtained(error: (error as! ValidationError).message, source: (error as! ValidationError).type)
+            let _  = try emailAddress.validatedText(validationType: .email)
+        } catch(let error as! ValidationError) {
+            
+//            self.output?.obtained(error: (error as! ValidationError).message, source: (error as! ValidationError).type)
         }
     }
 
