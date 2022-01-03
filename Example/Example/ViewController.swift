@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let emailAddress = "abc"
         do {
-            let _  = try emailAddress.validatedText(validationType: .number())
+            let _  = try emailAddress.validatedText(validationType: .email)
         } catch(let error) {
             if let error = error as? ValidationError {
                 print("Error message: \(error.message)")
