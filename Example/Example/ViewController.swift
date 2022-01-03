@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         do {
             let _ = try email.validatedText(validationType: .email)
         } catch(let error) {
-            let 
+            let
             self.output?.obtained(error: (error as! ValidationError).message, source: (error as! ValidationError).type)
         }
     }

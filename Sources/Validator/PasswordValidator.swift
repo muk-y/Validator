@@ -32,7 +32,6 @@ struct PasswordValidator: ValidatorConvertible {
     
 }
 
-
 public enum PasswordType: String {
     
     case normal
