@@ -16,4 +16,14 @@ final class NumberValidatorTest: XCTestCase {
         XCTAssertNoThrow(try testString.validatedText(validationType: .number()))
     }
     
+    func test_number_validator_with_alphabets_and_numbers_returns_exception() {
+        let testString = "123abc"
+        XCTAssertThrowsError(try testString.validatedText(validationType: .number()))
+    }
+    
+    func test_number_validator_with_symbols_returns_exception() {
+        let testString = "@#"
+        XCTAssertThrowsError(try testString.validatedText(validationType: .number()))
+    }
+    
 }

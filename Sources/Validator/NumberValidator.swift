@@ -18,7 +18,7 @@ struct NumberValidator: ValidatorConvertible {
     func validated(_ value: String) throws -> String {
         do {
             if value.isEmpty {return value}
-            if try NSRegularExpression(pattern: "^[a-zA-Z]+$", options: .caseInsensitive).firstMatch(in: value, options: [], range: NSRange(location: 0, length: value.count)) == nil {
+            if try NSRegularExpression(pattern: "^[0-9]+$", options: .caseInsensitive).firstMatch(in: value, options: [], range: NSRange(location: 0, length: value.count)) == nil {
                 throw ValidationError(GlobalConstants.text_number_error, type: key ?? "number")
             }
         } catch {
