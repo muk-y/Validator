@@ -36,26 +36,26 @@ public enum PasswordType: String {
     var title: String {
         switch self {
         case .normal:
-            return GlobalConstants.text_password
+            return GlobalConstants.Localization.text_password
         case .oldPassword:
-            return "\(GlobalConstants.current) \(GlobalConstants.text_password)"
+            return "\(GlobalConstants.Localization.text_current) \(GlobalConstants.Localization.text_password)"
         case .newPassword:
-            return "\(GlobalConstants.new) \(GlobalConstants.text_password)"
+            return "\(GlobalConstants.Localization.text_new) \(GlobalConstants.Localization.text_password)"
         case .confirmPassword:
-            return "\(GlobalConstants.confirm) \(GlobalConstants.text_password)"
+            return "\(GlobalConstants.Localization.text_confirm) \(GlobalConstants.Localization.text_password)"
         }
     }
     
     var emptyErrorMessage: String {
         switch self {
         case .normal:
-            return GlobalConstants.text_password_empty
+            return GlobalConstants.Localization.text_password_empty
         case .oldPassword:
-            return "\(GlobalConstants.current) \(GlobalConstants.text_password_empty)"
+            return "\(GlobalConstants.Localization.text_current) \(GlobalConstants.Localization.text_password_empty)"
         case .newPassword:
-            return "\(GlobalConstants.new) \(GlobalConstants.text_password_empty)"
+            return "\(GlobalConstants.Localization.text_new) \(GlobalConstants.Localization.text_password_empty)"
         case .confirmPassword:
-            return "\(GlobalConstants.confirm) \(GlobalConstants.text_password_empty)"
+            return "\(GlobalConstants.Localization.text_confirm) \(GlobalConstants.Localization.text_password_empty)"
         }
     }
     

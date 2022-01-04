@@ -1,0 +1,10 @@
+"text_password_empty" = "パスワードを入力してください";
+"text_confirm_password_empty" = "パスワードの確認を入力してください";
+"text_password" = "パスワード";
+"text_current" = "現在";
+"text_new" = "新しい";
+"text_confirm" = "確認";
+"text_email_empty = "メールアドレスを入力してください";
+"text_please_enter_a_valid_email = "有効なメールアドレスを入力してください。";
+"text_required_field_empty = "必須項目です。";
+"text_number_error = "Field should not contain alphabet";

@@ -9,15 +9,17 @@ import Foundation
 
 struct GlobalConstants {
     
-    static let text_password_empty = "Password shouldn\'t be empty."
-    static let text_confirm_password_empty = "Confirm password shouldn\'t be empty."
-    static let text_password = "Password"
-    static let current = "Current"
-    static let new = "New"
-    static let confirm = "Confirm"
-    static let text_email_empty = "Email shouldn\'t be empty."
-    static let please_enter_a_valid_email = "Please enter valid email."
-    static let text_required_field_empty = "required. Field shouldn't be empty."
-    static let text_number_error = "Field should not contain alphabet"
+    struct Localization {
+        static let text_password_empty = "text_password_empty".localized
+        static let text_confirm_password_empty = "text_confirm_password_empty".localized
+        static let text_password = "text_password".localized
+        static let text_current = "text_current".localized
+        static let text_new = "text_new".localized
+        static let text_confirm = "text_confirm".localized
+        static let text_email_empty = "text_email_empty".localized
+        static let text_please_enter_a_valid_email = "text_please_enter_a_valid_email".localized
+        static let text_required_field_empty = "text_required_field_empty".localized
+        static let text_number_error = "text_number_error".localized
+    }
     
 }

@@ -19,10 +19,10 @@ struct NumberValidator: ValidatorConvertible {
         do {
             if value.isEmpty {return value}
             if try NSRegularExpression(pattern: "^[0-9]+$", options: .caseInsensitive).firstMatch(in: value, options: [], range: NSRange(location: 0, length: value.count)) == nil {
-                throw ValidationError(GlobalConstants.text_number_error, type: key ?? "number")
+                throw ValidationError(GlobalConstants.Localization.text_number_error, type: key ?? "number")
             }
         } catch {
-            throw ValidationError(GlobalConstants.text_number_error, type: key ?? "number")
+            throw ValidationError(GlobalConstants.Localization.text_number_error, type: key ?? "number")
         }
         return value
     }

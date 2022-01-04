@@ -17,7 +17,7 @@ struct RequiredFieldValidator: ValidatorConvertible {
     
     func validated(_ value: String) throws -> String {
         guard !value.isEmpty else {
-            throw ValidationError(type + " \(GlobalConstants.text_required_field_empty)", type: type.lowercased())
+            throw ValidationError(type + " \(GlobalConstants.Localization.text_required_field_empty)", type: type.lowercased())
         }
         return value
     }
