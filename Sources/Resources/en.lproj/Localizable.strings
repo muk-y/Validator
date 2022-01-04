@@ -4,7 +4,7 @@
 "text_current" = "Current";
 "text_new" = "New";
 "text_confirm" = "Confirm";
-"text_email_empty = "Email shouldn\'t be empty.";
-"text_please_enter_a_valid_email = "Please enter valid email.";
-"text_required_field_empty = "required. Field shouldn't be empty.";
-"text_number_error = "Field should not contain alphabet";
+"text_email_empty" = "Email shouldn\'t be empty.";
+"text_please_enter_a_valid_email" = "Please enter valid email.";
+"text_required_field_empty" = "required. Field shouldn't be empty.";
+"text_number_error" = "Field should not contain alphabet";
